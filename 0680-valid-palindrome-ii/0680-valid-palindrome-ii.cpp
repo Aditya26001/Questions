@@ -1,4 +1,7 @@
 class Solution {
+    
+    
+    //palindrome check karna hai 2 pointer ke saath. jahan pe mismatch hua wahan 1 skip kar sakte hain. toh iska 2 case ban sata hai - left skip ya right skip.uske baad palindrome aana chhaiye lekin. agar wahan bhi palindrome nh aata hai toh false condition hai.  dono case ko consider krke or operation se return karwana hai.
 public:
     bool validPalindrome(string s) {
         int l = 0;
