@@ -6,11 +6,11 @@ public:
         string result;
         for(int i=0; i<s.size(); i++) {
             string word;
-            if(s[i]==' ') continue; //skip spaces
-            while(i<s.size() && s[i]!=' ' ) { //store continuous letters into word
+            if(s[i]==' ') continue; 
+            while(i<s.size() && s[i]!=' ' ) { 
                 word += s[i]; i++;
             }
-            stack.push(word); //push word to the stack
+            stack.push(word); 
         }
         while(!stack.empty()) {
             result += stack.top(); stack.pop();
